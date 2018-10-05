@@ -8,7 +8,7 @@ client.login("NDk3NzcxNDc4ODMwMjg0ODAw.DpkKOA.JAAu8NLv47_jETmaeYcPXVcJRfc");
 
 client.on("ready", () => {
     console.log("Je suis prêt !")
-    client.user.setGame("BlackkEyes | *aide");
+    client.user.setGame("BlackkEyes | *help");
 });
 
 client.on('message', message=> {
@@ -18,13 +18,13 @@ client.on('message', message=> {
         console.log('Le bot dit bonjour');
     }
 
-    if(message.content === prefix + "aide"){
+    if(message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#FF0000")
         .setTitle("Voici mes commandes d'aide.")
         .setThumbnail(message.author.avatarURL)
         .setDescription("Je suis BlackkBot. Voici mes commandes disponibles.")
-        .addField("*aide", "Affiche les commandes du bot.")
+        .addField("*help", "Affiche les commandes du bot.")
         .addField("Bonjour", "Le bot répond.")
         .addField("*stats", "Le bot vous envoie des informations sur votre profil.")
         .addField("*info", "Donne des informations sur le bot et le serveur.")
