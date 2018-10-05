@@ -8,7 +8,7 @@ client.login("NDk3NzcxNDc4ODMwMjg0ODAw.DpkKOA.JAAu8NLv47_jETmaeYcPXVcJRfc");
 
 client.on("ready", () => {
     console.log("Je suis prêt !")
-    client.user.setGame("BlackkEyes");
+    client.user.setGame("BlackkEyes | *aide");
 });
 
 client.on('message', message=> {
